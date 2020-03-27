@@ -1,0 +1,25 @@
+function binaryAgent(str) {
+let arr=str.split(' ')
+let arr2=[]
+let res=0function div(x){
+    let inside=arr[x].split('')
+    let m=128
+    res=0;
+    //console.log(inside)
+    for (let a=0; a<inside.length; a++){
+      if(inside[a]==='1'){res+=m}
+      //console.log(inside[a],res,m)
+      m= m*0.5 ;  
+      }return res}
+
+
+//div(0)console.log(arr[b],'end');div(b)
+//console.log(arr,res)
+for(let b=0; b<arr.length; b++){
+arr2.push(String.fromCharCode(div(b)))
+//console.log(arr2)
+
+}console.log(arr2)
+str=arr2.join('');
+console.log(str)
+  return str;}
